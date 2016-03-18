@@ -1,0 +1,16 @@
+{
+  "name": "'error-logger'",
+  "version": "1.0.0",
+  "description": "обработчик ошибок на клиентской стороне с возможностью отправки на сервер",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "logger",
+    "error",
+    "exeptions"
+  ],
+  "author": "Andrey Savelyev",
+  "license": "MIT"
+}

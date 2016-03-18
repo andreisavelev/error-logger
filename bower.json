@@ -1,0 +1,27 @@
+{
+  "name": "'error-logger'",
+  "description": "обработчик ошибок на клиентской стороне с возможностью отправки на сервер",
+  "main": "index.js",
+  "authors": [
+    "Andrey Savelyev"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "logger",
+    "error",
+    "exeptions"
+  ],
+  "moduleType": [
+    "amd",
+    "node"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
+}

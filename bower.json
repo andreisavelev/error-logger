@@ -1,5 +1,5 @@
 {
-  "name": "'error-logger'",
+  "name": "error-logger",
   "description": "обработчик ошибок на клиентской стороне с возможностью отправки на сервер",
   "main": "index.js",
   "authors": [

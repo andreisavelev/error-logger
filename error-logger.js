@@ -8,7 +8,7 @@
                 '&line=' + encodeURIComponent(lineNUmber);
 
             if (!_logTo.length) {
-                // deal with console.log
+                console.error("Error", message, url, lineNUmber);
             } else {
                 _xhr.open('POST', _logTo, true);
                 _xhr.send(_errorData);

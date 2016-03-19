@@ -2,7 +2,7 @@
   "name": "'error-logger'",
   "version": "1.0.0",
   "description": "обработчик ошибок на клиентской стороне с возможностью отправки на сервер",
-  "main": "index.js",
+  "main": "error-logger.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +11,13 @@
     "error",
     "exeptions"
   ],
-  "author": "Andrey Savelyev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/savelevcorr/error-logger.git"
+  },
+  "author": {
+    "name": "Andrey Savelyev",
+    "email": "savelevcorr@gmail.com"
+  },
   "license": "MIT"
 }

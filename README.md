@@ -26,6 +26,12 @@ $ require(['/bower_components/error-logger/error-logger'], function (errorLogger
 });
 ```
 
+или 
+
+```sh
+<script src="/js/error-logger.js"></script>
+```
+
 ### Использование
 
 Если логирование не сервере не требуется, можно вызвать errorLogger() без параметров.

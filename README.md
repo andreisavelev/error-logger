@@ -21,7 +21,7 @@ $ var errorLogger = require('client-error-logger');
 или 
 
 ```sh
-$ require(['/bower_components/error-lgger/error-logger'], function (errorLogger) {
+$ require(['/bower_components/error-logger/error-logger'], function (errorLogger) {
   errorLogger();
 });
 ```

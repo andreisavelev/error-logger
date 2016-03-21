@@ -1,14 +1,14 @@
 (function () {
     function errorLogger (logTo) {
         var _logTo = logTo || '';
-        var _sendByXhr = function (message, url, lineNUmber) {
+        var _sendByXhr = function (message, file, lineNUmber) {
             var _xhr = new XMLHttpRequest();
             var _errorData = 'message=' + encodeURIComponent(message) +
-                '&url=' + encodeURIComponent(url) +
+                '&file=' + encodeURIComponent(file) +
                 '&line=' + encodeURIComponent(lineNUmber);
 
             if (!_logTo.length) {
-                console.error("Error", message, url, lineNUmber);
+                console.error("Error", message, file, lineNUmber);
             } else {
                 _xhr.open('POST', _logTo, true);
                 _xhr.send(_errorData);

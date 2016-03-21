@@ -13,6 +13,7 @@
                 console.error("Error", message, file, lineNUmber);
             } else {
                 _xhr.open('POST', _logTo, true);
+                _xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
                 _xhr.send(_errorData);
             }
         };

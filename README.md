@@ -43,4 +43,7 @@ $ require(['/bower_components/error-logger/error-logger'], function (errorLogger
  errorLogger('http://my-best-site.com/logger.php');
  ```
 
-Будет отправлен запро с тремя параметрами message - Сообщение об ошибке, file - в каком скрипте произошла ошибка, line - на какой строке.
+Будет отправлен запро с тремя параметрами:
+ * message - Сообщение об ошибке, 
+ * file - в каком скрипте произошла ошибка, 
+ * line - на какой строке.

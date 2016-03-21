@@ -37,7 +37,6 @@ $ require(['/bower_components/error-logger/error-logger'], function (errorLogger
 Если логирование не сервере не требуется, можно вызвать errorLogger() без параметров.
 Если вы хотите писать логи ошибок клиента на сервере, то  передайте в качестве аргумента адрес обработчика запросоов, 
 Например:
- или 
  
  ```sh
  errorLogger('http://my-best-site.com/logger.php');

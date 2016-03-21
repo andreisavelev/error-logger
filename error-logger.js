@@ -3,9 +3,11 @@
         var _logTo = logTo || '';
         var _sendByXhr = function (message, file, lineNUmber) {
             var _xhr = new XMLHttpRequest();
-            var _errorData = 'message=' + encodeURIComponent(message) +
-                '&file=' + encodeURIComponent(file) +
-                '&line=' + encodeURIComponent(lineNUmber);
+            var _errorData = new FormData();
+
+            _errorData.append('message', message);
+            _errorData.append('file', file);
+            _errorData.append('line', lineNUmber);
 
             if (!_logTo.length) {
                 console.error("Error", message, file, lineNUmber);

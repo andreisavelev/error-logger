@@ -13,7 +13,7 @@ $ npm install --save client-error-logger
 $ bower install --save error-logger
 ```
 
-Скрипт пддерживает amd, CommonJS загрузку, а так же его можно просто подключить в теге script на странице.
+Скрипт поддерживает amd, CommonJS загрузку, а так же его можно просто подключить в теге script на странице.
 
 ```sh
 $ var errorLogger = require('client-error-logger');

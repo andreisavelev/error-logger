@@ -3,17 +3,16 @@
         var _logTo = logTo || '';
         var _sendByXhr = function (message, file, lineNUmber) {
             var _xhr = new XMLHttpRequest();
-            var _errorData = new FormData();
-
-            _errorData.append('message', message);
-            _errorData.append('file', file);
-            _errorData.append('line', lineNUmber);
+            var _errorData = 'message=' + encodeURIComponent(message) +
+                '&file=' + encodeURIComponent(file) +
+                '&line=' + encodeURIComponent(lineNUmber);
 
             if (!_logTo.length) {
                 console.error("Error", message, file, lineNUmber);
             } else {
                 _xhr.open('POST', _logTo, true);
                 _xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+                _xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
                 _xhr.send(_errorData);
             }
         };

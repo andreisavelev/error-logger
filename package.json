@@ -4,7 +4,8 @@
   "description": "обработчик ошибок на клиентской стороне с возможностью отправки на сервер",
   "main": "error-logger.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "min": "./node_modules/uglify-js/bin/uglifyjs ./error-logger.js --compress -o error-logger.min.js"
   },
   "keywords": [
     "logger",
@@ -19,5 +20,8 @@
     "name": "Andrey Savelyev",
     "email": "savelevcorr@gmail.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "uglify-js": "^2.6.2"
+  }
 }

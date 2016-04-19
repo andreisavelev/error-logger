@@ -2,6 +2,8 @@
 
 Скрипт логирования ошибок клиента на сервер.
 
+[English version](https://github.com/savelevcorr/error-logger/blob/master/README.md)
+
 ### Установка
 
 ```sh

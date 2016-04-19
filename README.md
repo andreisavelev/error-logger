@@ -2,6 +2,8 @@
 
 Logging front-end errors to the server.
 
+[Russian version](https://github.com/savelevcorr/error-logger/blob/master/README-ru-RU.md)
+
 ### Installation
 
 ```sh

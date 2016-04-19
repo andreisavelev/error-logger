@@ -18,31 +18,31 @@ $ bower install --save error-logger
 ```sh
 $ var errorLogger = require('client-error-logger');
 ```
-или 
+или
 
 ```sh
-$ require(['/bower_components/error-logger/error-logger'], function (errorLogger) {
+$ require(['/bower_components/error-logger/error-logger.min'], function (errorLogger) {
   errorLogger();
 });
 ```
 
-или 
+или
 
 ```sh
-<script src="/js/error-logger.js"></script>
+<script src="/js/error-logger.min.js"></script>
 ```
 
 ### Использование
 
 Если логирование не сервере не требуется, можно вызвать errorLogger() без параметров.
-Если вы хотите писать логи ошибок клиента на сервере, то  передайте в качестве аргумента адрес обработчика запросоов, 
+Если вы хотите писать логи ошибок клиента на сервере, то  передайте в качестве аргумента адрес обработчика запросоов,
 Например:
- 
+
  ```sh
  errorLogger('http://my-best-site.com/logger.php');
  ```
 
-Будет отправлен запро с тремя параметрами:
- * message - Сообщение об ошибке, 
- * file - в каком скрипте произошла ошибка, 
+Будет отправлен POST запроc с тремя параметрами:
+ * message - Сообщение об ошибке,
+ * file - в каком скрипте произошла ошибка,
  * line - на какой строке.

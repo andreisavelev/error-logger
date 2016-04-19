@@ -1,6 +1,6 @@
 # error-logger
 
-![Bower version](https://img.shields.io/badge/Bower-1.0.4-green.svg)
+[![Bower version](https://img.shields.io/badge/Bower-1.0.4-green.svg)
 [![npm version](https://img.shields.io/badge/npm-1.0.4-green.svg)
 [![GitHub issues](https://img.shields.io/github/issues/savelevcorr/error-logger.svg?style=plastic)](https://github.com/savelevcorr/error-logger/issues)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/savelevcorr/error-logger/master/LICENSE)

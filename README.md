@@ -1,48 +1,47 @@
 # error-logger
 
-Скрипт логирования ошибок клиента на сервер.
+Logging front-end errors to the server.
 
-### Установка
+### Installation
 
 ```sh
 $ npm install --save client-error-logger
 ```
-или
+or
 
 ```sh
 $ bower install --save error-logger
 ```
 
-Скрипт поддерживает amd, CommonJS загрузку, а так же его можно просто подключить в теге script на странице.
+The script supports amd, CommonJS, and you can just plug in a script tag on the page.
 
-```sh
-$ var errorLogger = require('client-error-logger');
+```javascript
+var errorLogger = require('client-error-logger');
 ```
-или
+or
 
-```sh
-$ require(['/bower_components/error-logger/error-logger.min'], function (errorLogger) {
+```javascript
+require(['/bower_components/error-logger/error-logger.min'], function (errorLogger) {
   errorLogger();
 });
 ```
+or
 
-или
-
-```sh
+```html
 <script src="/js/error-logger.min.js"></script>
 ```
 
-### Использование
+### Usage
 
-Если логирование не сервере не требуется, можно вызвать errorLogger() без параметров.
-Если вы хотите писать логи ошибок клиента на сервере, то  передайте в качестве аргумента адрес обработчика запросоов,
-Например:
+If logging is on server is not required, you can call errorLogger() without any parameters.
+If you want to write the error logs of client to server, pass as argument the address of the query processor.
+For example:
 
- ```sh
+ ```javascript
  errorLogger('http://my-best-site.com/logger.php');
  ```
 
-Будет отправлен POST запроc с тремя параметрами:
- * message - Сообщение об ошибке,
- * file - в каком скрипте произошла ошибка,
- * line - на какой строке.
+Will be sent POST request with three parameters:
+ * message - error message
+ * file - in what file an error occurred,
+ * line - what line of code error occured.

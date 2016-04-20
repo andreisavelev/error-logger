@@ -1,6 +1,6 @@
 {
   "name": "client-error-logger",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "обработчик ошибок на клиентской стороне с возможностью отправки на сервер",
   "main": "error-logger.js",
   "scripts": {

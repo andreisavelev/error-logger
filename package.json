@@ -1,7 +1,7 @@
 {
   "name": "client-error-logger",
   "version": "1.0.6",
-  "description": "обработчик ошибок на клиентской стороне с возможностью отправки на сервер",
+  "description": "Logging front-end errors to the server.",
   "main": "error-logger.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

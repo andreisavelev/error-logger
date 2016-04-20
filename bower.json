@@ -1,6 +1,6 @@
 {
   "name": "error-logger",
-  "description": "обработчик ошибок на клиентской стороне с возможностью отправки на сервер",
+  "description": "Logging front-end errors to the server.",
   "main": "index.js",
   "authors": [
     "Andrey Savelyev"

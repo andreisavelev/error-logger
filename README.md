@@ -1,7 +1,7 @@
 # error-logger
 
-![Bower version](https://img.shields.io/badge/Bower-1.0.4-green.svg)
-![npm version](https://img.shields.io/badge/npm-1.0.4-green.svg)
+![Bower version](https://img.shields.io/badge/Bower-1.0.6-green.svg)
+![npm version](https://img.shields.io/badge/npm-1.0.6-green.svg)
 [![GitHub issues](https://img.shields.io/github/issues/savelevcorr/error-logger.svg?style=plastic)](https://github.com/savelevcorr/error-logger/issues)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/savelevcorr/error-logger/master/LICENSE)
 
@@ -40,7 +40,7 @@ or
 
 ### Usage
 
-If logging is on server is not required, you can call errorLogger() without any parameters.
+If logging to the server is not required, you can call errorLogger() without any parameters.
 If you want to write the error logs of client to server, pass as argument the address of the query processor.
 For example:
 
@@ -51,4 +51,4 @@ For example:
 Will be sent POST request with three parameters:
  * message - error message
  * file - in what file an error occurred,
- * line - what line of code error occured.
+ * line - on what line of code error occurred.
